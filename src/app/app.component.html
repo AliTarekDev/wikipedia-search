@@ -1,0 +1,6 @@
+
+<div class="container mt-2">
+  <h1 class="mb-2">Type a word to search in wikipedia and press Enter key</h1>
+  <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+  <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
+</div>
